@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./resources/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <title>COVID-19 Tracker</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      
+      <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks?adgroupsurvey={adgroupsurvey}&gclid=Cj0KCQjw2tCGBhCLARIsABJGmZ7AZCHy0vPoKVgvIB21cb5ibjMSAKrhUL1SQsKsVCyoFpzJekHcXogaAlEKEALw_wcB" target="blank">
+        <img src="./resources/img/logo.png" alt="img" /></a>
+        <p>COVID-19<br />Stats</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a
+            href="https://www.google.com/search?q=coronavirus+stats&sxsrf=ALeKk011HVzhNOx78qzbqwxTx8-FketNqg%3A1618777632466&ei=IJZ8YOHwG-yH4-EP-um0iAo&oq=coronavirus+stats&gs_lcp=Cgdnd3Mtd2l6EAxQAFgAYJ42aABwAngAgAGnAYgBpwGSAQMwLjGYAQCqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwjhgIPO0IjwAhXswzgGHfo0DaEQ4dUDCA4">More
+            Details </a></li>
+        <li><a href="https://shreya2430.github.io/">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="stats">
+      <div class="latest-report">
+        <div class="country">
+          <div class="name">Loading...</div>
+          <div class="change-country">change</div>
+          <div class="search-country hide">
+            <div class="search-box">
+              <input type="text" id="search-input" placeholder="Search Country..." />
+              <img class="close" src="./resources/img/close.svg" alt="" />
+            </div>
+            <div class="country-list"></div>
+          </div>
+        </div>
+        <div class="total-cases">
+          <div class="title">Total Cases</div>
+          <div class="value">0</div>
+          <div class="new-value">+0</div>
+        </div>
+        <div class="recovered">
+          <div class="title">Recovered</div>
+          <div class="value">0</div>
+          <div class="new-value">+0</div>
+        </div>
+        <div class="deaths">
+          <div class="title">Deaths</div>
+          <div class="value">0</div>
+          <div class="new-value">+0</div>
+        </div>
+      </div>
+      <div class="chart">
+        <canvas id="axes_line_chart"></canvas>
+      </div>
+    </div>
+  </main>
+
+  <!-- <footer>
+    <div class="footer-container">
+      <div class="copyright">
+        <p>Created by Shreya Wanisha</p>
+      </div>
+    </div>
+  </footer> -->
+
+  <footer>
+    <span>
+        <div class="social">
+            <a href="https://twitter.com/ShreyaWanisha"target="_blank" ><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://instagram.com/shreyawanisha24"target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/shreya-wanisha-01a417193/"target="_blank"><i class="fab fa-linkedin"
+                    aria-hidden="true"></i></a>
+            <a href="https://github.com/shreya2430"target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
+    </span>
+    <span>Created By <a>Shreya Wanisha</a></span><br>
+    
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+  <script src="resources/js/countries.js"></script>
+  <script src="resources/js/app.js"></script>
+</body>
+
+</html>
