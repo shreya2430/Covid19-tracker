@@ -17,10 +17,10 @@ This Covid-19 Tracker project provides real-time tracking of Covid-19 cases glob
 - **User-Friendly Interface**: Simplified layout for quick access to critical information.
 
 ## Technologies Used
-- **Frontend**: React.js for building the UI and managing component states.
-- **Backend**: Node.js and Express for handling API calls and serving the frontend.
+- **HTML**: For structuring the content of the application.
+- **CSS**: For styling the application and creating a responsive design.
+- **JavaScript**: For implementing functionality and handling API calls to fetch live data.
 - **Data Source**: Integrates with a Covid-19 API to fetch live data.
-- **Styling**: CSS for styling the interface.
 
 ## Setup and Installation
 1. **Clone the repository**:
@@ -29,16 +29,8 @@ This Covid-19 Tracker project provides real-time tracking of Covid-19 cases glob
     cd Covid19-tracker
     ```
 
-2. **Install dependencies**:
-    ```bash
-    npm install
-    ```
-
-3. **Run the application**:
-    ```bash
-    npm start
-    ```
-    The app will run locally on `http://localhost:3000`.
+2. **Open the application**: 
+   Open `index.html` in your web browser.
 
 ## Usage
 - **Select Country**: Use the dropdown menu to view data for a specific country.
